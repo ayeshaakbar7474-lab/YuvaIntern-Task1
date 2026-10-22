@@ -1,0 +1,105 @@
+
+/* YuvaIntern Task 1 - Portfolio Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #243047;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #173b67;
+    color: white;
+    text-align: center;
+    padding: 48px 20px;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #d8e7fa;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 40px auto;
+    flex: 1;
+}
+
+.about {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(23, 59, 103, 0.08);
+}
+
+.about h2 {
+    margin-bottom: 12px;
+    color: #173b67;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+button {
+    background: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #104d80;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #f0b429;
+    outline-offset: 4px;
+}
+
+#message {
+    margin-top: 20px;
+    color: #17613a;
+    font-weight: bold;
+}
+
+footer {
+    background: #e5edf6;
+    color: #42536b;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 35px 16px;
+    }
+
+    .about {
+        padding: 22px;
+    }
+
+    main {
+        margin: 24px auto;
+    }
+}
